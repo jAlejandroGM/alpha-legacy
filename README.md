@@ -25,7 +25,7 @@ Due to conflicts with legacy dependencies and the goal of practicing a more mode
 
 You can find the active and improved version of the project here:
 
-👉 **[INSERT NEW REPOSITORY LINK HERE]** 👈
+👉 **[alpha](https://github.com/jAlejandroGM/alpha)** 👈
 
 ---
 

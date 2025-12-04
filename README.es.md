@@ -25,7 +25,7 @@ Debido a conflictos con dependencias antiguas y con el objetivo de practicar una
 
 Puedes encontrar la versión activa y mejorada del proyecto aquí:
 
-👉 **[INSERTA EL ENLACE DEL NUEVO REPOSITORIO AQUÍ]** 👈
+👉 **[alpha](https://github.com/jAlejandroGM/alpha)** 👈
 
 ---
 
