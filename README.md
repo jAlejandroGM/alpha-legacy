@@ -1,81 +1,62 @@
-# WebApp boilerplate with React JS and Flask API
+# Alpha
 
-Build web applications using React.js for the front end and python/flask for your backend API.
+![Status: Deprecated](https://img.shields.io/badge/Status-Deprecated-red?style=for-the-badge)
 
-- Documentation can be found here: https://4geeks.com/docs/start/react-flask-template
-- Here is a video on [how to use this template](https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b)
-- Integrated with Pipenv for package managing.
-- Fast deployment to Render [in just a few steps here](https://4geeks.com/docs/start/deploy-to-render-com).
-- Use of .env file.
-- SQLAlchemy integration for database abstraction.
+## 📖 Project Summary
 
-### 1) Installation:
+This repository hosts the source code for **Alpha**, the final project developed as the culmination of a **Full Stack Web Development Bootcamp**.
 
-> If you use Github Codespaces (recommended) or Gitpod this template will already come with Python, Node and the Posgres Database installed. If you are working locally make sure to install Python 3.10, Node 
+The project's objective was to create a comprehensive school management platform, enabling the administration of users (students and teachers), grades, schedules, and attendance.
 
-It is recomended to install the backend first, make sure you have Python 3.10, Pipenv and a database engine (Posgress recomended)
+## 🛠️ Original Stack Technologies
 
-1. Install the python packages: `$ pipenv install`
-2. Create a .env file based on the .env.example: `$ cp .env.example .env`
-3. Install your database engine and create your database, depending on your database you have to create a DATABASE_URL variable with one of the possible values, make sure you replace the valudes with your database information:
+This project was originally built using the following technologies:
 
-| Engine    | DATABASE_URL                                        |
-| --------- | --------------------------------------------------- |
-| SQLite    | sqlite:////test.db                                  |
-| MySQL     | mysql://username:password@localhost:port/example    |
-| Postgress | postgres://username:password@localhost:5432/example |
+- **Frontend:** React.js, Vite, Bootstrap.
+- **Backend:** Python, Flask API.
+- **Database:** PostgreSQL, SQLAlchemy (ORM).
+- **Authentication:** JWT (JSON Web Tokens).
 
-4. Migrate the migrations: `$ pipenv run migrate` (skip if you have not made changes to the models on the `./src/api/models.py`)
-5. Run the migrations: `$ pipenv run upgrade`
-6. Run the application: `$ pipenv run start`
+## 🛑 IMPORTANT! Project Migrated
 
-> Note: Codespaces users can connect to psql by typing: `psql -h localhost -U gitpod example`
+**This repository has been archived and will not receive further updates.**
 
-### Undo a migration
+Due to conflicts with legacy dependencies and the goal of practicing a more modern and robust environment setup, the decision has been made to migrate all development to a new repository.
 
-You are also able to undo a migration by running
+You can find the active and improved version of the project here:
 
-```sh
-$ pipenv run downgrade
+👉 **[INSERT NEW REPOSITORY LINK HERE]** 👈
+
+---
+
+## ⚙️ How to Run the Project (Legacy Version)
+
+If you need to run this specific version of the code for historical reference, use the following commands:
+
+### 1. Backend (Python)
+
+Ensure you have Python installed.
+
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate environment (Windows)
+.\venv\Scripts\activate
+# Activate environment (Mac/Linux)
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Start the server
+python src/app.py
 ```
 
-### Backend Populate Table Users
+### 2. Frontend (Node.js)
 
-To insert test users in the database execute the following command:
+Ensure you have Node.js installed.
 
-```sh
-$ flask insert-test-users 5
-```
+## 🎓 Credits
 
-And you will see the following message:
-
-```
-  Creating test users
-  test_user1@test.com created.
-  test_user2@test.com created.
-  test_user3@test.com created.
-  test_user4@test.com created.
-  test_user5@test.com created.
-  Users created successfully!
-```
-
-### **Important note for the database and the data inside it**
-
-Every Github codespace environment will have **its own database**, so if you're working with more people eveyone will have a different database and different records inside it. This data **will be lost**, so don't spend too much time manually creating records for testing, instead, you can automate adding records to your database by editing ```commands.py``` file inside ```/src/api``` folder. Edit line 32 function ```insert_test_data``` to insert the data according to your model (use the function ```insert_test_users``` above as an example). Then, all you need to do is run ```pipenv run insert-test-data```.
-
-### Front-End Manual Installation:
-
--   Make sure you are using node version 20 and that you have already successfully installed and runned the backend.
-
-1. Install the packages: `$ npm install`
-2. Start coding! start the webpack dev server `$ npm run start`
-
-## Publish your website!
-
-This boilerplate it's 100% read to deploy with Render.com and Heroku in a matter of minutes. Please read the [official documentation about it](https://4geeks.com/docs/start/deploy-to-render-com).
-
-### Contributors
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
-
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+Developed by Alejandro Guzmán as a Bootcamp graduation project, based on an original template from 4Geeks Academy.
